@@ -40,4 +40,19 @@ public class Arithmetic
   return j;
   }
   
+   @GET
+  @Path("/multiply/{a}/{b}")
+
+  @Produces({"application/json"})
+  public JSONObject multiply(@PathParam("a") double a, @PathParam("b") double b) throws JSONException
+   
+  {
+
+	    JSONObject j = new JSONObject();
+  double multiply = a * b;
+  j.put("Multiplication is", multiply);
+  return j;
+  }
+  
+  
 }
