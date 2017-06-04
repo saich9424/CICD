@@ -22,7 +22,8 @@ public class Arithmetic
   {
 	    JSONObject j = new JSONObject();
     double sum = a + b;
-    j.put("Sum is", sum);
+   
+    j.put("Sum",sum);
     return j;
   }
   
@@ -36,23 +37,8 @@ public class Arithmetic
 
 	    JSONObject j = new JSONObject();
   double subtraction = a - b;
-  j.put("Subtraction is", subtraction);
+  j.put("Subtraction", subtraction);
   return j;
   }
-  
-   @GET
-  @Path("/multiply/{a}/{b}")
-
-  @Produces({"application/json"})
-  public JSONObject multiply(@PathParam("a") double a, @PathParam("b") double b) throws JSONException
-   
-  {
-
-	    JSONObject j = new JSONObject();
-  double multiply = a * b;
-  j.put("Multiplication is", multiply);
-  return j;
-  }
-  
   
 }
