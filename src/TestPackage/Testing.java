@@ -13,7 +13,7 @@ public class Testing {
 			body("Subtraction", equalTo(1.67f)).
 			
 		when().
-			get("http://localhost:8086/Arithmetic/rest/subtraction/10.67/9");
+			get("http://52.14.40.69:8085/Arithmetic/rest/subtraction/10.67/9");
 	}
 
 	@Test
@@ -22,7 +22,7 @@ public class Testing {
 			body("Sum", equalTo(66)).
 			
 		when().
-			get("http://localhost:8086/Arithmetic/rest/sum/6/60");
+			get("http://52.14.40.69:8085/Arithmetic/rest/sum/6/60");
 	}
 
 }
